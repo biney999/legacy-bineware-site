@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .section-project {
+    max-width: 560px; 
+    margin: 0 auto; 
+  }
+  
+  .section-project h4 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  
+  .section-project h2 {
+    /* position: relative; */
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 0;
+  }
+  
+  
+  /* create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    /* height: 300px; */
+    height: auto;
+  }
+  
+  .column img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 3px;
+  }
+  
+  .column p {
+    margin-bottom: 10px;
+  }
+  
+  .column h4 {
+    margin-bottom: 10px;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16pt;
+  }
+  
+  .column li {
+    margin-bottom: 5px;
+  }
+
+  .box2-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  /* box */
+  .boxes2-container {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    bottom: 150px;
+  
+  }
+  
+  
+
+.box2 {
+    width: 800px;
+    min-height: 300px;
+    background-color: #b4befe;
+    color: #4c4f69;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .box2 h3 {
+    font-size: 25pt;
+    margin: 0 0 20px;
+    text-align: left;
+  }
+  .box2 h4 {
+      font-size: 16pt;
+      margin: 0;
+      text-align: left;
+      font-weight: bold;
+    }
+  
+  .box2 p {
+    font-size: 16pt;
+    margin: 0 0 20px;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+
+  .features__box2-wrapper {
+    display: flex;
+    flex-direction: column; /* add this line */
+    align-items: center;
+}
+
+
+
+  /* clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* responsive layout, makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 850px) {
+    /* .column {
+      width: 100%;
+    }
+    .features__box2-wrapper {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      
+      .box2 {
+        margin-bottom: 20px;
+      }
+    
+      .features__box2 {
+        flex: 1 100%;
+        margin-bottom: 20px;
+      } */
+
+
+      .column {
+        width: 100%; /* make columns stack on top of each other on smaller screens */
+        height: auto; /* remove fixed height for flexibility */
+        float: none; /* remove float for stacking columns */
+      }
+    
+      .row:after {
+        display: block; /* content wraps correctly on smaller screens */
+      }
+    
+      .box2 {
+        width: 100%; /* make the boxes take full width on smaller screens */
+        margin: 0; /* remove horizontal margin to fit the full width */
+        margin-bottom: 20px;
+      }
+    
+      .features__box2-wrapper {
+        align-items: stretch; /* stretch the boxes to fill the container width */
+      }
+  }

@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .newlogo {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .logoImage {
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+    border-radius: 50%;
+    animation: spinLogo 10s linear infinite; /* Add the spin animation to the logoImage */
+  }
+  
+  .notFoundText {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Define the spinLogo animation */
+  @keyframes spinLogo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
