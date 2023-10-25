@@ -1,3 +1,3 @@
 # bineware-site
-My personal website. It's boring.
+Old code for my personal website. It's boring. 
 
