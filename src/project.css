@@ -146,22 +146,22 @@
 
 
       .column {
-        width: 100%; /* make columns stack on top of each other on smaller screens */
-        height: auto; /* remove fixed height for flexibility */
-        float: none; /* remove float for stacking columns */
+        width: 100%; 
+        height: auto; 
+        float: none; 
       }
     
       .row:after {
-        display: block; /* content wraps correctly on smaller screens */
+        display: block; 
       }
     
       .box2 {
-        width: 100%; /* make the boxes take full width on smaller screens */
-        margin: 0; /* remove horizontal margin to fit the full width */
+        width: 100%;
+        margin: 0; 
         margin-bottom: 20px;
       }
     
       .features__box2-wrapper {
-        align-items: stretch; /* stretch the boxes to fill the container width */
+        align-items: stretch; 
       }
   }
